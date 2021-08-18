@@ -18,10 +18,11 @@
     <%=truncatedText%>
 
     <% if (wasTruncated) { %>
-      <a href="posts/<%=post.title%>">Read More</a>
+      <a href="posts/<%=post._id%>">Read More</a>
     <% } %>
   </p>
 
+   <% wasTruncated = false; %>
 <% }); %>
 
 <%- include("partials/footer"); -%>
